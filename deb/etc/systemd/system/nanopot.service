@@ -1,0 +1,13 @@
+[Unit]
+Description=NanoPot nanopot
+After=network.target
+
+[Service]
+Type=simple
+User=honeypot
+WorkingDirectory=/home/honeypot
+ExecStart=/usr/bin/python3 -m nanopot /etc/honeypot.ini
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

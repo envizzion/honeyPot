@@ -1,0 +1,4 @@
+first  install tkinter with following command 
+----------------
+
+sudo apt-get install python3-pil.imagetk.
